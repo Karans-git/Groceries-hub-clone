@@ -1,0 +1,245 @@
+
+#product_section
+{
+    width:100%;
+    height:auto;
+    /* border: 1px solid brown; */
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    margin-bottom: 2rem;
+     margin-top: 4rem;
+
+}
+#left-section
+{
+/* background-color: pink; */
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+border-right: 1px solid #dedede;
+padding-left: 2rem;
+}
+.cat_head 
+{
+        border-bottom: 1px solid #dedede;
+    margin-bottom: 12px;
+    display: block;
+    margin-top: 25px;
+}
+.cat_head span
+{
+    border-bottom: 2px solid #84c225;
+    color: rgba(34,34,34,.87);
+    display: inline-block;
+    padding-bottom: 2px;
+    font-size: 1.6rem;
+    font-family: ProximaNova-Semibold;
+}
+.cat_sub_head_top
+{
+    margin-left:5px;
+}
+.cat_sub_head_second
+{
+    margin-left:15px;
+}
+.cat_sub_head_list
+{
+    margin-left:25px;
+}
+#middle-section
+{
+    /* background-color: yellow; */
+    margin: auto;
+    
+}
+
+#right-section
+{
+      /* background-color: cornflowerblue; */
+      margin-left: 2rem;
+      margin-right: 1rem
+}
+#cssproductname
+{
+        font-size: 1.8rem;
+    color: #222;
+    padding-top: .6rem;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+#addtobasketitem
+{
+        cursor: pointer;
+    margin: 0 5px;
+    background: #84c225;
+    color: #fff;
+    border: 1px solid #84c225;
+    border-radius: 3px;
+    padding: 11px 30px;
+    
+}
+#addtobasketitem:hover
+{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#save
+{
+    position: relative;
+    background: #fff;
+    margin: 0 5px;
+    padding: 11px 30px;
+    border:#d0d0d0 solid 0.1rem;
+    color:black
+}
+#save:hover
+{
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#packsize
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    gap:1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.packdiv
+{
+    
+    border: none;
+    width: 100%;
+    
+    cursor: pointer;
+    font-size: 1.2rem;
+    min-height: 54px;
+    border-radius: .3rem;
+    overflow: hidden;
+    min-height: 3rem;
+    border: 1px solid #d0d0d0;
+    
+    padding-left:1rem;
+    
+
+}
+.packdiv:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#product_name_heading
+{
+    width:100%;
+    height: 40px;
+    padding:5px;
+    /* background-color: aqua; */
+    margin:auto;
+    line-height: 10px;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 4rem;
+}
+#product_description
+{
+    width: 100%;
+    height:auto;
+    /* background-color: blueviolet; */
+    margin-bottom: 3rem;
+}
+.desc_heading
+{
+     font-family: ProximaNova-Regular;
+     color: #444444;
+    cursor: pointer;
+    color: #444;
+    font-weight: 400;
+    size: 16px;
+}
+.desc_ul
+{
+        padding-left: 1.4rem;
+        
+}
+.desc_li
+{
+        /* line-height: 1.4; */
+         font-family: ProximaNova-Regular;
+     color: #666666;
+    cursor: pointer;
+    
+    font-weight: 400;
+    size: 13px;
+    line-height: 18px;
+}
+   
+#product_rating_heading
+{
+     font-family: ProximaNova-Regular;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 24px;
+     color: #444444;
+}
+#product_rating_section
+{
+    width: 100%;
+    height:200px;
+    /* background-color: rgb(231, 16, 134); */
+    padding-bottom: 3rem;
+}
+#rating_img
+{
+       width: 100%;
+    height:200px;
+    /* background-color: rgb(231, 16, 134); */
+    padding-bottom: 3rem;
+}
+#productimg
+{
+    width: 300px;
+     height: 300px;
+     
+}
+#productimg:hover
+{
+
+
+transform: scale(1.2);
+}
+
+
+
+
+@media all and (max-width: 1100px) and (min-width:0px)
+{   
+    
+    #product_section
+    {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        
+    }
+
+  #left-section
+    {
+        display:none;
+    }
+    
+    #middle-section
+    {
+         display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #right-section
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+}

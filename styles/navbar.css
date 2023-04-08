@@ -1,0 +1,208 @@
+body{
+    font-family: sans-serif;
+}
+#login{
+    font-size: 15px;
+    display: flex;
+    width: 50%;
+    float: right;
+    color: #6d6b6b;
+    flex-direction: row-reverse;
+}
+#login i{
+    padding: 5px;
+    margin-left: 30px;
+}
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    gap: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar>div{
+    align-items: center;
+}
+img{
+    width: 70%;
+}
+#logo_div {
+    margin-left: 50px;
+}
+.logo{
+    width: 45%;
+}
+#navbar input{
+    width: 65%;
+    padding: 6px 2px;
+}
+#middle{
+    display: flex;
+}
+#middle i{
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #84c225 ;
+}
+#right{
+    height:80%;
+    background-color:#f2f2f2 ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 50px;
+}
+#right:hover {
+    border: 1px solid rgb(219, 219, 219);
+
+}
+#right i{
+    font-size: 30px;
+    float: right;
+    color: red;
+}
+/* css to apply when the navbar sticks to the top */
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+}
+
+/* User icon onclick css */
+#myAccount{
+    display: flex;
+    flex-direction:row-reverse;
+    background-color: #fff;
+    display: none;
+    height: auto;
+    width: 150px;
+    border: 1px solid rgb(185, 182, 182);
+    position: absolute;
+    right: 0;
+    top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#myAccount ul{
+    list-style: none;
+    padding: 0px;
+}
+#myAccount li{
+    border-bottom:1px dashed #6d6b6b;
+    padding: 5px;
+    font-size: 15px;
+}
+#myAccount li:hover{
+    background-color: #e4e0e0;
+}
+/* shopByCategory */
+#shopByCategory{
+    border-top: 1px solid #bbbaba;
+    border-bottom: 1px solid #bbbaba;
+    width: 92%;
+    margin: auto;
+}
+
+.shopByCategory_block{
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#shopByCategory_drpDwn{
+    display: none;
+    border-bottom: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 92%;
+    margin: auto;
+}
+.UL{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+}
+.UL>a:nth-child(1) {
+    background-color: white;
+}
+.col2{
+    background-color: rgb(197, 194, 194);
+    color: black;
+}
+.UL>a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 13px;
+    color: gray;
+}
+.UL>a:hover{
+    background-color: #e4e0e0;
+    color: black;
+}
+button {
+    width: auto;
+    color: white;
+    padding: 10px;
+    margin-right: 2px;
+    border: none;
+    cursor: pointer;
+}
+#shopByCategory_btn{
+    background-color: rgb(2, 189, 2);
+}
+#shopByCategory_btn~button{
+    width: auto;
+    color: black;
+    padding: 10px;
+    margin-right: 2px;
+    /* border: none; */
+    cursor: pointer;
+}
+#shopByCategory_btn~button:hover{
+    background-color: rgb(2, 189, 2);
+}
+.style{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid red; */
+    width: 73%;
+    left: 22.5%;
+    margin: auto;
+}
+#inner_link>div{
+    display: flex;
+    flex-direction: column;
+}
+/* Login Popup */
+
+#popUp{
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    /* background-color: red; */
+    /* border: 1px solid; */
+    right: 500px;
+}
+#popUp input{
+    padding: 2% 25%;
+    /* margin-bottom: 5px; */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 830px) {
+
+    
+
+}
